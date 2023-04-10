@@ -1,4 +1,3 @@
-import styles from "@/utils/twStyles"
 import Link from "next/link"
 import { useState } from "react"
 import Image from "next/image"
@@ -13,9 +12,7 @@ const Navbar = () => {
     window.scrollTo(0, 0)
   }
   return (
-    <nav
-      className={`${styles.paddingX} w-full items-center py-5 flex top-0 z-20 bg-primary`}
-    >
+    <nav className={`p-x w-full items-center py-5 flex top-0 z-20 bg-primary`}>
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link href="/" className="flex items-center gap-2" onClick={handleLink}>
           <Image src="/assets/logo.svg" alt="logo" width={50} height={50} />
@@ -34,7 +31,7 @@ const Navbar = () => {
               hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(link.title)}
             >
-              <Link href={"/"}>{link.title}</Link>
+              <a href={`#${link.href}`}>{link.title}</a>
             </li>
           ))}
         </ul>
