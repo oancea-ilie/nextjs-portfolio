@@ -1,10 +1,9 @@
-import Link from "next/link"
 import { ComputersCanvas } from "./canvas"
 import { motion } from "framer-motion"
 
 const Hero = () => {
   return (
-    <section className="p-x w-full h-screen mx-auto relative">
+    <section className="p-x w-full h-[80vh] mx-auto relative">
       <div className="relative">
         <div className="pl-4 max-w-7xl flex mx-auto gap-8 mt-20">
           <div className="flex flex-col justify-center items-center">

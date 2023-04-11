@@ -1,5 +1,3 @@
-import { useState } from "react"
-import Tilt from "react-parallax-tilt"
 import { motion } from "framer-motion"
 import { services } from "../constants/constants"
 import { fadeIn, textVariant } from "../utils/motions"
