@@ -1,12 +1,11 @@
 import Experience from "@/components/Experience"
-import Feedbacks from "@/components/Feedbacks"
 import Hero from "@/components/Hero"
 import Navbar from "@/components/Navbar"
-import StartsCanvas from "@/components/StartsCanvas"
 import Tech from "@/components/Tech"
 import About from "@/components/About"
 import Contact from "@/components/Contact"
 import Work from "@/components/Work"
+import StarsCanvas from "@/components/canvas/StarsCanvas"
 
 const Home = () => {
   return (
@@ -20,10 +19,9 @@ const Home = () => {
         <Experience />
         <Tech />
         <Work />
-        <Feedbacks />
         <div className="relative z-0">
           <Contact />
-          <StartsCanvas />
+          <StarsCanvas />
         </div>
       </div>
     </main>

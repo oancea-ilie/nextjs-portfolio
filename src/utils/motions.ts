@@ -1,4 +1,4 @@
-type Direction = "left" | "right" | "up" | "down"
+type Direction = "left" | "right" | "up" | "down" | ""
 
 export const textVariant = (delay: number = 0) => {
   return {
