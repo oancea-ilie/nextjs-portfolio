@@ -1,10 +1,13 @@
+import useResize from "@/utils/useResize"
 import { useGLTF } from "@react-three/drei"
 
-interface Props {
-  isMobile: boolean
-}
-const Computers = ({ isMobile }: Props) => {
+const Computers = () => {
   const computer = useGLTF("/assets/apple_desktop/scene.gltf")
+
+  const { width } = useResize()
+  const under1280 = width < 1280
+  const under600 = width < 600
+
   return (
     <mesh>
       <hemisphereLight intensity={0.8} groundColor="black" />
@@ -21,8 +24,8 @@ const Computers = ({ isMobile }: Props) => {
         object={computer.scene}
         // scale={isMobile ? 0.7 : 1}
         // position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
-        scale={2.5}
-        position={[0, -3.5, 0]}
+        scale={under600 ? 1.7 : 2.5}
+        position={under1280 ? [0, -2.5, 0] : [0, -3.5, 0]}
         // rotation={[-0.01, -0.2, -0.1]}
         rotation={[0, 2, 0]}
       />

@@ -5,25 +5,8 @@ import Loader from "../Loader"
 import Computers from "./Computers"
 
 const ComputersCanvas = () => {
-  const [isMobile, setIsMobile] = useState(false)
-
-  useEffect(() => {
-    const mediaQuery = window.matchMedia("(max-width: 500px)")
-
-    setIsMobile(mediaQuery.matches)
-
-    const handleMediaQueryChange = (event: any) => {
-      setIsMobile(event.matches)
-    }
-    mediaQuery.addEventListener("change", handleMediaQueryChange)
-
-    return () => {
-      mediaQuery.removeEventListener("change", handleMediaQueryChange)
-    }
-  }, [])
-
   return (
-    <div className="h-[500px] w-[550px] cursor-grab">
+    <div className="h-[500px] xs:h-[500px] w-[300px] xs:w-[450px] sm:w-[550px] cursor-grab">
       <Canvas
         frameloop="demand"
         shadows
@@ -36,7 +19,7 @@ const ComputersCanvas = () => {
             maxPolarAngle={Math.PI / 2}
             minPolarAngle={Math.PI / 2}
           />
-          <Computers isMobile={isMobile} />
+          <Computers />
         </Suspense>
         <Preload all />
       </Canvas>

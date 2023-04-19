@@ -1,11 +1,7 @@
-import { useState } from "react"
 import BallCanvas from "./canvas/BallCanvas"
-import SectionWrapper from "@/utils/SectionWrapper"
 import { technologies } from "@/constants/constants"
 
 const Tech = () => {
-  const [state, setState] = useState<boolean>(false)
-
   return (
     <section className="flex flex-row flex-wrap justify-center gap-10">
       {technologies.map((tech) => (
@@ -16,4 +12,4 @@ const Tech = () => {
     </section>
   )
 }
-export default SectionWrapper(Tech, "")
+export default Tech

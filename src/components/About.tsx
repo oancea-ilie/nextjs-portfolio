@@ -2,7 +2,6 @@ import { motion } from "framer-motion"
 import { services } from "../constants/constants"
 import { fadeIn, textVariant } from "../utils/motions"
 import ServiceCard from "./ServiceCard"
-import SectionWrapper from "@/utils/SectionWrapper"
 
 const About = () => {
   return (
@@ -20,7 +19,7 @@ const About = () => {
         dedicated to building websites that reflect your brand and exceed your
         goals.
       </motion.p>
-      <div className="mt-20 gap-5  grid  grid-auto-columns: minmax(250px, 1fr)">
+      <div className="mt-20 gap-5 grid xsm:grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} service={service} />
         ))}
@@ -29,4 +28,4 @@ const About = () => {
   )
 }
 
-export default SectionWrapper(About, "about")
+export default About

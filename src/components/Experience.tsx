@@ -2,7 +2,6 @@ import { VerticalTimeline } from "react-vertical-timeline-component"
 import { motion } from "framer-motion"
 import { experiences } from "@/constants/constants"
 import { textVariant } from "@/utils/motions"
-import SectionWrapper from "@/utils/SectionWrapper"
 import ExperienceCard from "./ExperienceCard"
 import "react-vertical-timeline-component/style.min.css"
 
@@ -23,4 +22,4 @@ const Experience = () => {
     </section>
   )
 }
-export default SectionWrapper(Experience, "work")
+export default Experience

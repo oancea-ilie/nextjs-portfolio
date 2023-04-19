@@ -1,8 +1,6 @@
 import { projects } from "@/constants/constants"
-import SectionWrapper from "@/utils/SectionWrapper"
 import { fadeIn, textVariant } from "@/utils/motions"
 import { motion } from "framer-motion"
-import { useState } from "react"
 import ProjectCard from "./ProjectCard"
 
 const Work = () => {
@@ -24,7 +22,7 @@ const Work = () => {
           reiciendis dolore?
         </motion.p>
       </div>
-      <div className="mt-20 flex flex-wrap gap-7">
+      <div className="mt-20 grid  sm:grid-cols-2 lg:grid-cols-3 gap-5">
         {projects.map((project, index) => (
           <ProjectCard
             key={`project-${index}`}
@@ -36,4 +34,4 @@ const Work = () => {
     </section>
   )
 }
-export default SectionWrapper(Work, "")
+export default Work
