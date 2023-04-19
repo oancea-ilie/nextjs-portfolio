@@ -12,14 +12,10 @@ const Navbar = () => {
     window.scrollTo(0, 0)
   }
   return (
-    <nav className={`p-x w-full items-center py-5 flex top-0 z-20 bg-primary`}>
-      <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
-        <Link href="/" className="flex items-center gap-2" onClick={handleLink}>
-          <Image src="/assets/logo.svg" alt="logo" width={50} height={50} />
-          <p className="text-white text-[18px] font-bold cursor-pointer flex">
-            Oancea Ilie &nbsp;
-            <span className="sm:block hidden">| JS Developer</span>
-          </p>
+    <nav className={`w-full items-center  py-8 flex top-0 z-20 bg-primary`}>
+      <div className="p-x w-full flex justify-between items-center mx-auto max-w-7xl">
+        <Link href="/" onClick={handleLink}>
+          <Image src="/assets/logo.svg" alt="logo" width={224} height={27} />
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-10">
           {navLinks.map((link) => (

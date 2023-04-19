@@ -23,10 +23,7 @@ const ComputersCanvas = () => {
   }, [])
 
   return (
-    <div
-      style={{ width: "calc(100vw - 100px)" }}
-      className="h-[550px] mx-auto mt-[-200px] cursor-grab"
-    >
+    <div className="h-[500px] w-[550px] cursor-grab">
       <Canvas
         frameloop="demand"
         shadows
