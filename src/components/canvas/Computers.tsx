@@ -6,7 +6,7 @@ const Computers = () => {
 
   const { width } = useResize()
   const under1280 = width < 1280
-  const under600 = width < 600
+  const under450 = width < 600
 
   return (
     <mesh>
@@ -24,10 +24,10 @@ const Computers = () => {
         object={computer.scene}
         // scale={isMobile ? 0.7 : 1}
         // position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
-        scale={under600 ? 1.7 : 2.5}
-        position={under1280 ? [0, -2.5, 0] : [0, -3.5, 0]}
+        scale={under450 ? 1.7 : 2}
+        position={under1280 ? [0, -2.5, 0] : [0, -3, 0]}
         // rotation={[-0.01, -0.2, -0.1]}
-        rotation={[0, 2, 0]}
+        rotation={[0, 1.35, 0]}
       />
     </mesh>
   )
