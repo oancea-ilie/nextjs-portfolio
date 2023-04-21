@@ -9,10 +9,10 @@ To run this project locally, follow these steps:
 3. Run `npm install` to install the necessary dependencies.
 4. Create a `.env` file in the root directory of the project.
 5. Add the following environment variables to the `.env` file:
-   `NEXT_PUBLIC_EMAIL_SERVICE_ID = ""`
-   `NEXT_PUBLIC_EMAIL_TEMPLATE_ID = ""`
-   `NEXT_PUBLIC_EMAIL_PUBLIC_KEY= ""`
-   `NEXT_PUBLIC_ADMIN_EMAIL= ""`
+   `NEXT_PUBLIC_EMAIL_SERVICE_ID = ""`  
+    `NEXT_PUBLIC_EMAIL_TEMPLATE_ID = ""`  
+    `NEXT_PUBLIC_EMAIL_PUBLIC_KEY= ""`  
+    `NEXT_PUBLIC_ADMIN_EMAIL= ""`
 
 ###### Note: Replace the empty strings with your own values for the Email.js service ID, template ID, public key, and admin email.
 
