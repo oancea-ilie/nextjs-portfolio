@@ -6,7 +6,7 @@ import Computers from "./Computers"
 
 const ComputersCanvas = () => {
   return (
-    <div className="h-[500px] md:h-[500px] w-[300px] xs:w-[450åpx] sm:w-[550px] cursor-grab">
+    <div className="h-[500px] md:h-[500px] w-[300px] xs:w-[430px] sm:w-[550px] cursor-grab">
       <Canvas
         frameloop="demand"
         shadows

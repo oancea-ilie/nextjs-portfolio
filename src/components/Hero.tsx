@@ -4,19 +4,22 @@ import { motion } from "framer-motion"
 const Hero = () => {
   return (
     <>
-      <section className="h-[60vh] sm:h-[80vh] mx-auto relative flex flex-col xl:flex-row items-center max-w-7xl justify-between p-x">
+      <section className="h-[70vh] sm:h-[80vh] mx-auto relative flex flex-col xl:flex-row items-center max-w-7xl justify-between p-x">
         <div className="flex-1 flex gap-8 mt-10 xl:mt-0">
           <div className="flex flex-col justify-start items-center">
             <div className="w-5 h-5 rounded-full bg-[#915eff]" />
-            <div className="w-1 h-28 lg:h-52 violet-gradient" />
+            <div className="w-1 h-32 sm:h-48 lg:h-52 violet-gradient" />
           </div>
           <div>
             <h1 className="hero-header-text">
               Hi, I&apos;m <span className="text-[#915eff]">Oancea</span>{" "}
             </h1>
-            <p className="hero-sub-text mt-2">
-              A skilled web developer showcasing <br />
-              my work with modern, creative design.
+            <p
+              className="hero-sub-text mt-2 block"
+              style={{ maxWidth: "600px" }}
+            >
+              a web developer with a passion for using my coding skills and
+              creativity to design and develop engaging, functional websites.
             </p>
           </div>
         </div>

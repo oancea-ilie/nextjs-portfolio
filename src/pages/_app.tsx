@@ -1,5 +1,7 @@
 import "@/styles/globals.css"
 import "@/styles/tailwind.css"
+import { ToastContainer } from "react-toastify"
+import "react-toastify/dist/ReactToastify.css"
 
 import type { AppProps } from "next/app"
 import { Poppins } from "next/font/google"
@@ -13,6 +15,7 @@ const App = ({ Component, pageProps }: AppProps) => {
   return (
     <main className={poppins.className}>
       <Component {...pageProps} />
+      <ToastContainer />
     </main>
   )
 }

@@ -15,11 +15,9 @@ const Work = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
-          dolorem accusamus eum recusandae quod, nisi itaque assumenda delectus
-          consectetur eaque, magni, modi fugit nostrum? Dolorem vel ex ducimus
-          nulla totam hic qui itaque minus soluta! Explicabo possimus laboriosam
-          reiciendis dolore?
+          As an experienced web developer, I have had the privilege of working
+          on a variety of exciting projects. Here are a few examples of my
+          recent work:
         </motion.p>
       </div>
       <div className="mt-20 grid  sm:grid-cols-2 lg:grid-cols-3 gap-5">
