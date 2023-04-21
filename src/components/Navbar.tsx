@@ -59,7 +59,7 @@ const Navbar = () => {
                     setActive(link.title)
                   }}
                 >
-                  <Link href={"/"}>{link.title}</Link>
+                  <a href={`#${link.href}`}>{link.title}</a>
                 </li>
               ))}
             </ul>
